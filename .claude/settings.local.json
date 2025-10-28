@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(del \"C:\\Users\\lenovo\\OneDrive\\Desktop\\miniproject\\HOW_TO_TEST.md\")",
+      "Bash(del \"C:\\Users\\lenovo\\OneDrive\\Desktop\\miniproject\\project_SBS.md\")"
     ],
     "deny": [],
     "ask": []
