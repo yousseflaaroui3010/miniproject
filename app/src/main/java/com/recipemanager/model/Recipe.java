@@ -1,13 +1,17 @@
 package com.recipemanager.model;
 
 import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
 
 /**
  * Main recipe data model that represents a single recipe
  * Used for both API responses and local database storage
  * Each field maps to the API's JSON structure
+ * Implements Serializable so it can be passed between fragments
  */
-public class Recipe {
+public class Recipe implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     // Unique identifier from TheMealDB API
     @SerializedName("idMeal")
