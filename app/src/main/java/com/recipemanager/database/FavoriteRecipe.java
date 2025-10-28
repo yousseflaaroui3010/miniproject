@@ -4,14 +4,18 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.annotation.NonNull;
+import java.io.Serializable;
 
 /**
  * Room database entity representing a saved/favorite recipe
  * This is the table structure for local storage
  * Each instance of this class = one row in the database
+ * Implements Serializable so it can be passed between fragments
  */
 @Entity(tableName = "favorite_recipes")
-public class FavoriteRecipe {
+public class FavoriteRecipe implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     // Primary key - uses the meal ID from the API (prevents duplicates)
     @PrimaryKey
