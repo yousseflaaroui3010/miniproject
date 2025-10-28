@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme -->
-    <style name="Theme.RecipeManager" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!-- Base application theme - LIGHT MODE ONLY -->
+    <style name="Theme.RecipeManager" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color -->
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryVariant">@color/primary_dark</item>
@@ -15,12 +15,18 @@
         <!-- Status bar color -->
         <item name="android:statusBarColor">@color/primary_dark</item>
 
-        <!-- Background color -->
-        <item name="android:windowBackground">@color/background_gray</item>
+        <!-- Background colors - LIGHT -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
 
-        <!-- Text colors -->
-        <item name="android:textColorPrimary">@color/text_primary</item>
+        <!-- Text colors - DARK TEXT ON LIGHT BACKGROUND -->
+        <item name="android:textColorPrimary">@color/black</item>
         <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Material color surface -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
     </style>
 
     <!-- NoActionBar theme for custom toolbar -->
